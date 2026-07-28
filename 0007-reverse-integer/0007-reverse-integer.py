@@ -10,7 +10,7 @@ class Solution:
             num=x%10
             x=int(x/10)
             rev=rev*10+num
-        if rev>2**31 or rev<-2**31:
+        if rev>2**31:
             return 0
         elif neg:
             return rev*-1
